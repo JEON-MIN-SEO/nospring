@@ -5,6 +5,12 @@ public class Member { //Entity
     private String name;
     private Grade grade;
 
+    public Member(long id, String name, Grade grade) {
+        this.id = id;
+        this.name = name;
+        this.grade = grade;
+    }
+
     public long getId() {
         return id;
     }
