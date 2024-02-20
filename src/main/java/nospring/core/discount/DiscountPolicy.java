@@ -1,4 +1,8 @@
 package nospring.core.discount;
 
-public class DiscountPolicy {
+import nospring.core.member.Member;
+
+public interface DiscountPolicy {
+    //値段を返す
+    int discount(Member member, int price);
 }
