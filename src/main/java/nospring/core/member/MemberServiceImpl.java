@@ -1,8 +1,12 @@
 package nospring.core.member;
 
 public class MemberServiceImpl implements MemberService {
+    private final MemberRepository memberRepository;
+//    MemberRepository memberRepository = new MemoryMemberRepository(); //cmd + shift + enter
+    public MemberServiceImpl(MemberRepository memberRepository){
+        this.memberRepository=memberRepository;
+    }
 
-    MemberRepository memberRepository = new MemoryMemberRepository(); //cmd + shift + enter
     @Override
     public void join(Member member) {
         memberRepository.save(member);
