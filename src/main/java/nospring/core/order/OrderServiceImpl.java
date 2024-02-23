@@ -10,7 +10,7 @@ import nospring.core.member.MemoryMemberRepository;
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository; //save, findById
-    private final DiscountPolicy discountPolicy; //discount Fix
+    private final DiscountPolicy discountPolicy; //discount
 
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
