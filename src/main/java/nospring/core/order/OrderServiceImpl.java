@@ -25,4 +25,9 @@ public class OrderServiceImpl implements OrderService{
         //member.getGrade()를 넣고 싶으면 반환값이 Grade여야 한다. 그거 때문에 못 하는거다
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
+
+    //Test
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
