@@ -6,7 +6,9 @@ import nospring.core.member.Grade;
 import nospring.core.member.Member;
 import nospring.core.member.MemberRepository;
 import nospring.core.member.MemoryMemberRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository; //save, findById

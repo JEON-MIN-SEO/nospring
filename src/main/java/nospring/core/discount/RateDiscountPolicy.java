@@ -2,7 +2,9 @@ package nospring.core.discount;
 
 import nospring.core.member.Grade;
 import nospring.core.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
