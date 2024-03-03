@@ -32,5 +32,7 @@ public class OrderApp {
         Order order = orderService.createOrder(memberId, "itemA", 10000);
         System.out.println("Order ="+ order.toString());
         System.out.println(order.calculatePrice());
+        Order order2 = orderService.createOrder(memberId, "itemA", 10000);
+
     }
 }
